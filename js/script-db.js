@@ -74,3 +74,20 @@ switchMode.addEventListener('change', function () {
 		document.body.classList.remove('dark');
 	}
 })
+
+
+function edit(id) {
+    const elem = document.getElementById(id);
+    const data = elem.textContent;
+    const input = prompt(`Edit ${id}:`, data);
+  
+    if (input !== null && input !== "") {
+      elem.textContent = input;
+      updateDatabase(id, input);
+    }
+  }
+  
+  function updateDatabase(field, value) {
+    console.log(`Updated ${field} to ${value}`);
+  }
+  
