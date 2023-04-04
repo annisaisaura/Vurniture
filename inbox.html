@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="css/style-db.css">
+
+	<title>Dashboard</title>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<span class="text">vurniture</span>
+		</a>
+		<ul class="side-menu top">
+			<li>
+				<a href="home-db.html">
+					<i class='bx bxs-home'></i>
+					<span class="text">Home</span>
+				</a>
+			</li>
+			<li>
+				<a href="dashboardUser.html">
+					<i class='bx bxs-user' ></i>
+					<span class="text">My Profile</span>
+				</a>
+			</li>
+			<li>
+				<a href="trans-list.html">
+					<i class='bx bxs-receipt' ></i>
+					<span class="text">Transaction List</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="inbox.html">
+					<i class='bx bxs-message-dots' ></i>
+					<span class="text">Inbox</span>
+				</a>
+			</li>
+			<li>
+				<a href="wish-list.html">
+					<i class='bx bxs-bookmark-heart' ></i>
+					<span class="text">Wish List</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="settings.html">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="home.html" class="logout">
+					<i class='bx bx-log-out' ></i></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+				<img src="img/ProfilUser.jpeg">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Inbox</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Inbox</a>
+						</li>
+					</ul>
+                    <div class="inbox-up">
+                        <h3>Event</h3>
+						<div class="cc-out">
+                        <div class="card-con">
+                            <div class="card-ib">
+                                <img src="img/VurnitureGrandOpening.png">
+                                <div class="desc-cib">
+                                    <h4>Grand Opening Vurniture</h4>
+                                </div>
+                            </div>
+                            <div class="card-ib">
+                                <img src="img/VurnitureGrandOpening.png">
+                                <div class="desc-cib">
+                                    <h4>Grand Opening Vurniture</h4>
+                                </div>
+                            </div>
+                            <div class="card-ib">
+                                <img src="img/VurnitureGrandOpening.png">
+                                <div class="desc-cib">
+                                    <h4>Grand Opening Vurniture</h4>
+                                </div>
+                            </div>
+                            <div class="card-ib">
+                                <img src="img/VurnitureGrandOpening.png">
+                                <div class="desc-cib">
+                                    <h4>Grand Opening Vurniture</h4>
+                                </div>
+                            </div>
+						</div>
+                        </div>
+                    </div>
+                    <div class="inbox-down">
+                        <h3>Chat</h3>
+
+                    </div>
+                </div>
+            </div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	<script src="js/script-db.js"></script>
+</body>
+</html> 
