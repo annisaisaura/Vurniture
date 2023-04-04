@@ -589,3 +589,236 @@ body {
 		min-width: 420px;
 	}
 }
+/* My Profile Dashboard */
+.card-con {
+    display: flex;
+    gap: 10px;
+	overflow-x: auto;
+	scrollbar-width: 10px;
+	overflow: scroll !important;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 300px;
+    border-radius: 8%;
+    padding: 25px;
+    background-color: #FBFBFB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+.container-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 8%;
+    box-shadow: 2px 2px 4px 0px salmon;
+    border-color: #060714;
+}
+  
+.container-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8%;
+    object-fit: cover;
+}
+
+.card button {
+    font-size: 1.5em;
+    margin: 10px;
+    align-content: center;
+}
+  
+.card p {
+    font-size: 10px;
+    margin: 2px;
+}
+
+.card button {
+    border-radius: 9px;
+    padding: 3px;
+    border-color: rgb(255, 171, 162);
+    background-color: rgb(255, 171, 162);
+    color: #fff;
+    font: 10px var(--poppins), sans-serif;
+    font-size: larger;
+}
+
+.card button:hover {
+    background-color: #ffc6c6;
+}
+
+.but-desc {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.pers-inf {
+    margin-left: 10px;
+}
+
+.full-sym {
+    font-size: smaller;
+    padding: 10px 0px;
+}
+
+.sym {
+    width: 100px;
+    display: inline-block;
+}
+
+.sym-desc {
+    color: #696969;
+    width: 250px;
+    display: inline-block;
+}
+
+.edit {
+    color: salmon;
+}
+
+/* Transaction List */
+.card-tl {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 940px;
+    border-radius: 10px;
+    padding: 25px;
+    background-color: #FBFBFB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-tl h3 {
+	margin-bottom: 20px;
+}
+
+.card-tl table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.card-tl td, th {
+	border: 2px solid salmon; 
+	padding: 8px; 
+}
+
+.card-tl thead {
+	color: salmon;
+}
+
+.card-tl tbody {
+	font-size: smaller;
+}
+
+/* Inbox */
+.card-ib {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 350px;
+    height: 200px;
+    border-radius: 15px;
+    /* background-color: #FBFBFB; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	position: relative;
+}
+
+.card-ib img {
+	width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.desc-cib {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+	border-radius: 0 0 15px 15px;
+}
+
+.desc-cib h4 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.inbox-down h3 {
+	margin-top: 20px;
+}
+
+.cc-out {
+	display: block;
+}
+
+/* Wish List */
+.wl-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 950px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: #FBFBFB;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+	position: relative;
+	padding: 15px;
+}
+
+.wl-des {
+	display: flex;
+}
+
+.wl-cardcon {
+	gap: 20px;
+}
+
+.wl-card img {
+	width: 250px;
+	height: auto;
+	border-radius: 15px;
+}
+
+.wl-text {
+	margin-left: 10px;
+}
+
+.to-shop {
+	border: #DB504A solid;
+	padding: 12px;
+	background-color: #FBFBFB;
+	width: 150px;
+	text-align: center;
+	color: #DB504A;
+	border-radius: 40px;
+}
+
+.wl-but {
+	display: flex;
+	margin-top: 15px;
+}
+
+.del-all {
+	border: #DB504A solid;
+	padding: 12px;
+	background-color: #FBFBFB;
+	width: 150px;
+	text-align: center;
+	color: #DB504A;
+	border-radius: 40px;
+	position: absolute;
+	right: 27px;
+}
