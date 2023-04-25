@@ -706,7 +706,7 @@ body {
 }
 
 .card-tl td, th {
-	border: 2px solid salmon; 
+	/* border: 2px solid salmon;  */
 	padding: 8px; 
 }
 
@@ -821,4 +821,59 @@ body {
 	border-radius: 40px;
 	position: absolute;
 	right: 27px;
+}
+
+/* Team */
+.members {
+    /* margin-bottom: 10px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+	margin-top: 40px;
+}
+
+.member {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px 0 rgb(192 192 192 / 75%);
+    /* cursor: pointer; */
+    /* transition: all .50s ease; */
+}
+
+/* .member:hover {
+    background: var(--btn-color);
+} */
+
+.members img {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 100%;
+}
+
+.members h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color:rgb(0 0 0 / 75%);
+}
+
+.members h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color:rgb(0 0 0 / 75%);
+}
+
+.ct-btn i {
+    font-size: 32px;
+    padding: 10px 0;
+    color: var(--btn-color);
+    transition: all .50s ease;
+}
+
+.ct-btn i:hover {
+    color: var(--txt-color);
+    /* transform: translateY(-2.5px); */
 }
