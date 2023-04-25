@@ -85,9 +85,13 @@ function edit(id) {
       elem.textContent = input;
       updateDatabase(id, input);
     }
-  }
+}
   
-  function updateDatabase(field, value) {
+function updateDatabase(field, value) {
     console.log(`Updated ${field} to ${value}`);
-  }
-  
+}
+
+// fungsi edit photo
+function editPhoto() {
+	window.location.href = "editPhoto.html"; // URL tujuan halaman lain
+}
