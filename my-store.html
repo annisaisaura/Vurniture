@@ -98,7 +98,7 @@
 			<div class="head-title">
 				<div class="left">
 					<h1>My Store</h1>
-					<!-- <ul class="breadcrumb">
+					<ul class="breadcrumb">
 						<li>
 							<a href="#">Dashboard</a>
 						</li>
@@ -106,13 +106,13 @@
 						<li>
 							<a class="active" href="#">My Store</a>
 						</li>
-					</ul> -->
+					</ul>
 				</div>
 
 				<div class="table-data">
 					<div class="order">
 						<div class="head">
-							<h3>Products</h3>
+							<h3>Product Lists</h3>
 							<i class='bx bx-search' ></i>
 							<i class='bx bx-filter' ></i>
 						</div>
@@ -120,26 +120,30 @@
 							<tr>
 								<td>
 									<form autocomplete="off" onsubmit="onFormSubmit()">
-										<div>
-											<label for="productCode">Product Code</label>
+										<div class="product-form">
+											<label for="productCode">Code</label>
 											<input type="text" name="productCode" id="productCode">
 										</div>
-										<div>
-											<label for="product">Product Name</label>
+										<div class="product-form">
+											<label for="product">Name</label>
 											<input type="text" name="product" id="product">
 										</div>
-										<div>
-											<label for="qty">Qty</label>
+										<!-- <div class="product-form">
+											<label for="img">Image</label>
+											<input type="url" name="img" id="img">
+										</div> -->
+										<div class="product-form">
+											<label for="qty">Quantity</label>
 											<input type="number" name="qty" id="qty">
 										</div>
-										<div>
+										<div class="product-form">
 											<label for="perPrice">Price</label>
 											<input type="number" name="perPrice" id="perPrice">
 										</div>
 					
 										<div class="form_action--button">
-											<input type="submit" value="Submit">
-											<input type="reset" value="Reset">
+											<input type="submit" class="submit" value="Submit">
+											<input type="reset" class="reset" value="Reset">
 										</div>
 									</form>
 					
@@ -147,9 +151,10 @@
 										<table class="list" id="storeList">
 											<thead>
 												<tr>
-													<th>Product Code</th>
-													<th>Product Name</th>
-													<th>Qty</th>
+													<th>Code</th>
+													<th>Name</th>
+													<!-- <th>Image</th> -->
+													<th>Quantity</th>
 													<th>Price</th>
 												</tr>
 											</thead>
