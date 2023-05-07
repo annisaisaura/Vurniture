@@ -611,7 +611,8 @@ body {
 
 .product-form input {
     font-size: 14px;
-    width: 275px;
+	width: 275px;
+    /* width: 925px; */
     height: 35px;
     padding: 0 15px;
     border: 1px solid rgb(0 0 0 / 50%);
