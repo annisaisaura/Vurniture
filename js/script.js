@@ -1,11 +1,6 @@
 const wrapper = document.querySelector('.wrapper');
 const signUpLink = document.querySelector('.sign-up-link');
 const loginLink = document.querySelector('.login-link');
-
-signUpLink.addEventListener('click', () => {
-    wrapper.classList.toggle('show-sign-up');
-});
-
 const form = document.getElementById('form');
 const usnInput = document.getElementById('usn');
 const emailInput = document.getElementById('email');
