@@ -114,7 +114,7 @@
                                     <img src="img/ProfilUser.jpeg">
                                 </div>
                                 <div class="but-desc">
-                                    <button>Change Profile</button>
+                                    <button id="btn" onclick="editPhoto()">Change Profile</button>
                                     <p>Maximum size: 10 mb.</p>
                                     <p>Allowed type of file: .JPG .JPEG .PNG</p>
                                 </div>
@@ -125,34 +125,34 @@
                             <div class="pers-desc">
                                 <div class="full-sym">
                                     <span class="sym">Name</span>
-                                    <span class="sym-desc">Seok Matthew</span>
-                                    <span class="edit">Edit</span>
+                                    <span class="sym-desc" id="name">Seok Matthew</span>
+                                    <span class="edit" onclick="edit('name')">Edit</span>
                                 </div>
                                 <div class="full-sym">
                                     <span class="sym">Date of Birth</span>
-                                    <span class="sym-desc">28 May 2002</span>
-                                    <span class="edit">Edit</span>
+                                    <span class="sym-desc" id="dob">28 May 2002</span>
+  									<span class="edit" onclick="edit('dob')">Edit</span>
                                 </div>
                                 <div class="full-sym">
-                                    <span class="sym">Gender</span>
-                                    <span class="sym-desc">Man</span>
-                                    <span class="edit">Edit</span>
-                                </div>
-                                <div class="full-sym">
-                                    <span class="sym">Email</span>
-                                    <span class="sym-desc">SeokMatthew@gmail.com</span>
-                                    <span class="edit">Edit</span>
-                                </div>
-                                <div class="full-sym">
-                                    <span class="sym">Phone Number</span>
-                                    <span class="sym-desc">081234567890</span>
-                                    <span class="edit">Edit</span>
-                                </div>
-                                <div class="full-sym">
-                                    <span class="sym">Password</span>
-                                    <span class="sym-desc">********</span>
-                                    <span class="edit">Edit</span>
-                                </div>
+									<span class="sym">Gender</span>
+									<span class="sym-desc" id="gender">Man</span>
+									<span class="edit" onclick="edit('gender')">Edit</span>
+								  </div>
+								  <div class="full-sym">
+									<span class="sym">Email</span>
+									<span class="sym-desc" id="email">SeokMatthew@gmail.com</span>
+									<span class="edit" onclick="edit('email')">Edit</span>
+								  </div>
+								  <div class="full-sym">
+									<span class="sym">Phone Number</span>
+									<span class="sym-desc" id="phone">081234567890</span>
+									<span class="edit" onclick="edit('phone')">Edit</span>
+								  </div>
+								  <div class="full-sym">
+									<span class="sym">Password</span>
+									<span class="sym-desc" id="password">********</span>
+									<span class="edit" onclick="edit('password')">Edit</span>
+								  </div>
                             </div>
                         </div>
 				    </div>
