@@ -18,7 +18,8 @@ li {
 	--poppins: 'Poppins', sans-serif;
 	--ubuntu: 'Ubuntu', sans-serif;
 
-	--light: #F9F9F9;
+	/* --light: #F9F9F9; */
+	--light: white;
 	--pink: salmon;
 	--light-pink: wheat;
 	--grey: #eee;
@@ -589,6 +590,69 @@ body {
 		min-width: 420px;
 	}
 }
+
+.product-form {
+    position: relative;
+    margin: 20px;
+    align-items: center;
+}
+
+.product-form label {
+    position: absolute;
+    font-size: 12px;
+    top: 50%;
+    left: 10px;
+	padding: 0 5px;
+	background-color: var(--light);
+    border-radius: 10px;
+	transform: translateY(-150%);
+    transition: .5s;
+}
+
+.product-form input {
+    font-size: 14px;
+	width: 275px;
+    /* width: 925px; */
+    height: 35px;
+    padding: 0 15px;
+    border: 1px solid rgb(0 0 0 / 50%);
+    border-radius: 10px;
+    outline: none;
+}
+
+.form_action--button .submit {
+	font-size: 14px;
+    width: 70px;
+    height: 35px;
+    margin: 20px 20px;
+    background: var(--red);
+    box-shadow: 0 1px 5px 0 rgb(192 192 192 / 75%);
+    border: 1px solid rgb(0 0 0 / 50%);
+    border-radius: 10px;
+    transition: all .50s ease;
+	cursor: pointer;
+}
+
+.form_action--button .reset:hover {
+	background: var(--light);
+}
+
+.form_action--button .reset {
+	font-size: 14px;
+    width: 70px;
+    height: 35px;
+    background: var(--red);
+    box-shadow: 0 1px 5px 0 rgb(192 192 192 / 75%);
+    border: 1px solid rgb(0 0 0 / 50%);
+    border-radius: 10px;
+    transition: all .50s ease;
+	cursor: pointer;
+}
+
+.form_action--button .submit:hover {
+	background: var(--light);
+}
+
 /* My Profile Dashboard */
 .card-con {
     display: flex;
@@ -706,7 +770,7 @@ body {
 }
 
 .card-tl td, th {
-	border: 2px solid salmon; 
+	/* border: 2px solid salmon;  */
 	padding: 8px; 
 }
 
@@ -821,4 +885,59 @@ body {
 	border-radius: 40px;
 	position: absolute;
 	right: 27px;
+}
+
+/* Team */
+.members {
+    /* margin-bottom: 10px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+	margin-top: 40px;
+}
+
+.member {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px 0 rgb(192 192 192 / 75%);
+    /* cursor: pointer; */
+    /* transition: all .50s ease; */
+}
+
+/* .member:hover {
+    background: var(--btn-color);
+} */
+
+.members img {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 100%;
+}
+
+.members h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color:rgb(0 0 0 / 75%);
+}
+
+.members h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color:rgb(0 0 0 / 75%);
+}
+
+.ct-btn i {
+    font-size: 32px;
+    padding: 10px 0;
+    color: var(--btn-color);
+    transition: all .50s ease;
+}
+
+.ct-btn i:hover {
+    color: var(--txt-color);
+    /* transform: translateY(-2.5px); */
 }
